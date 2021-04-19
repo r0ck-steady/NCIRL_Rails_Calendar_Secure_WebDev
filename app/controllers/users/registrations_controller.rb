@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 class Users::RegistrationsController < Devise::RegistrationsController
 
-def create
+    def create
        recaptcha_valid = verify_recaptcha(model: @user, action: 'registration')
       if recaptcha_valid
         super
@@ -10,7 +10,7 @@ def create
         redirect_to new_user_registration_path
       end
     end
-
+    
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
