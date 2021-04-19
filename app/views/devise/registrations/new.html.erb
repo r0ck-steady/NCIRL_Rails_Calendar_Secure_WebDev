@@ -1,5 +1,9 @@
 <h2>Sign up</h2>
 
+<%= content_for :recaptcha_js do %>
+  <%= include_recaptcha_js %>
+<% end %>
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -22,9 +26,15 @@
   </div>
   <br/>
 
+                                                                                      <%= recaptcha_v3(action: 'registration') %>
+
+  
   <div class="actions">
     <%= f.submit "Sign up", class: "btn btn-secondary"  %>
   </div>
+
+
+  
 <% end %>
 
 <%= render "devise/shared/links" %>

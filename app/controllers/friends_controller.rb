@@ -1,6 +1,6 @@
 class FriendsController < ApplicationController
   before_action :set_friend, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index]
   before_action :correct_user, only: [:edit, :update, :destroy]
   # GET /friends or /friends.json
   def index
@@ -15,6 +15,7 @@ class FriendsController < ApplicationController
   def new
     #@friend = Friend.new
     @friend = current_user.friends.build
+
   end
 
   # GET /friends/1/edit

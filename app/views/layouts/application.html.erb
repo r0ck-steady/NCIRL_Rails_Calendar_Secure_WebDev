@@ -13,19 +13,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
   </head>
+  
   <body>
     <%= render "home/header" %>
+                                                                        <!-- https://www.sitepoint.com/quick-tip-add-recaptcha-to-your-rails-application/ -->
+                                                                          <p class="notice"><%= notice %></p>
+                                                                          <p class="alert"><%= alert %></p>
+
     <div class="container">
       <br/>
     <% if notice %>  
-          <%= render 'layouts/alerts' %>
+        <%= render 'layouts/alerts' %>
     <% end %>
-
       <br/>
       <%= yield %>
     </div>
