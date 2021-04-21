@@ -20,14 +20,17 @@
   
   <body>
     <%= render "home/header" %>
-                                                                        <!-- https://www.sitepoint.com/quick-tip-add-recaptcha-to-your-rails-application/ -->
-                                                                          <p class="notice"><%= notice %></p>
-                                                                          <p class="alert"><%= alert %></p>
+
+
+<p class="notice"><%= notice %></p>
+<p class="alert" align="center"><%= alert %></p>
 
     <div class="container">
       <br/>
     <% if notice %>  
+    <p>
         <%= render 'layouts/alerts' %>
+        </p>
     <% end %>
       <br/>
       <%= yield %>

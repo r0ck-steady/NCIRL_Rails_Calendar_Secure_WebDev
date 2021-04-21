@@ -6,7 +6,6 @@ ruby '2.7.2'
 gem 'activeadmin'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.1'
-# Use sqlite3 as the database for Active Record
 
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -23,7 +22,6 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 #gem 'recaptcha', '~> 5.7'
-gem 'recaptcha'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -59,4 +57,4 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-
+gem "recaptcha", require: "recaptcha/rails"
