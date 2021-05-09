@@ -59,5 +59,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-gem 'devise-two-factor', '~> 3.0'
-gem 'rqrcode' # We'll need this to generate a QR code
+#gem 'devise-two-factor', '~> 3.0'
+#gem 'rqrcode' # We'll need this to generate a QR code
+gem 'brakeman', '~> 5.0', '>= 5.0.1'
+gem 'bundle-audit', '~> 0.1.0'
+gem 'rails_best_practices', '~> 1.20', '>= 1.20.1'
