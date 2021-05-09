@@ -64,3 +64,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'brakeman', '~> 5.0', '>= 5.0.1'
 gem 'bundle-audit', '~> 0.1.0'
 gem 'rails_best_practices', '~> 1.20', '>= 1.20.1'
+gem 'actionpack', '~> 6.1', '>= 6.1.3.2'
