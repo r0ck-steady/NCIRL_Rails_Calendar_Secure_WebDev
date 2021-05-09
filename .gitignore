@@ -40,5 +40,6 @@ yarn-debug.log*
 .yarn-integrity
 /config/local_env.yml
 
+# I forgot to add the / to the below
 /config/initializers/recaptcha.rb
 /db/seeds.rb
