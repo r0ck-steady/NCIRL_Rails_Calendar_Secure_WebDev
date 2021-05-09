@@ -40,5 +40,5 @@ yarn-debug.log*
 .yarn-integrity
 /config/local_env.yml
 
-recaptcha.rb
-seeds.rb
+config/initializers/recaptcha.rb
+db/seeds.rb
